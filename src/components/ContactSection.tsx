@@ -7,7 +7,7 @@ export function ContactSection() {
         <div className="text-center mb-16">
           <h2 className="text-slate-900 mb-4">Kontakt oss</h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.
+            Ta kontakt med oss dersom du har spørsmål eller ønsker mer informasjon om våre behandlinger.
           </p>
         </div>
 
@@ -23,8 +23,8 @@ export function ContactSection() {
                   </div>
                   <div>
                     <div className="text-slate-600">Telefon</div>
-                    <a href="tel:+4712345678" className="text-slate-900 hover:text-[#127ccb]">
-                      +47 123 45 678
+                    <a href="tel:+4796129130" className="text-slate-900 hover:text-[#127ccb]">
+                      961 29 130 eller 924 54 797
                     </a>
                   </div>
                 </div>
@@ -35,8 +35,8 @@ export function ContactSection() {
                   </div>
                   <div>
                     <div className="text-slate-600">E-post</div>
-                    <a href="mailto:post@borghelse.no" className="text-slate-900 hover:text-[#127ccb]">
-                      post@borghelse.no
+                    <a href="mailto:erik@borghelse.no" className="text-slate-900 hover:text-[#127ccb]">
+                      erik@borghelse.no
                     </a>
                   </div>
                 </div>
@@ -61,8 +61,8 @@ export function ContactSection() {
                   <div>
                     <div className="text-slate-600">Åpningstider</div>
                     <div className="text-slate-900">
-                      Man-Fre: 09:00 - 18:00<br />
-                      Lør: 10:00 - 15:00
+                      Man-Fre: 06:00 - 15:00<br />
+                      Lør: Stengt (etter avtale)
                     </div>
                   </div>
                 </div>
@@ -72,10 +72,7 @@ export function ContactSection() {
             {/* Booking Section */}
             <div id="bestill" className="bg-[#127ccb] p-8 rounded-xl text-white">
               <h3 className="text-white mb-4">Bestill time</h3>
-              <p className="mb-6 text-blue-50">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
-                tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+              <p className="mb-6 text-blue-50">Vi hjelper deg med å redusere smerter, forbedre bevegelighet og komme tilbake til en aktiv hverdag.</p>
               <a
                 href="https://patientsky.com"
                 target="_blank"

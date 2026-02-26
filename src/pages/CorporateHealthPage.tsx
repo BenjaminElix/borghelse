@@ -6,22 +6,22 @@ export function CorporateHealthPage() {
     {
       icon: Users,
       title: 'Bedre trivsel',
-      description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+      description: 'Ansatte som får rask og profesjonell oppfølging opplever mindre smerter og høyere trivsel på jobb.',
     },
     {
       icon: TrendingUp,
       title: 'Økt produktivitet',
-      description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+      description: 'Forebygging og tidlig behandling reduserer sykefravær og bidrar til mer effektiv drift.',
     },
     {
       icon: Calendar,
       title: 'Fleksible avtaler',
-      description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+      description: 'Vi tilbyr faste bedriftsavtaler eller behovsbasert oppfølging – tilpasset deres organisasjon.',
     },
     {
       icon: Building2,
       title: 'På deres lokaler',
-      description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+      description: 'Vi kan komme til dere og gjennomføre behandling, kartlegging eller foredrag direkte på arbeidsplassen.',
     },
   ];
 
@@ -41,9 +41,7 @@ export function CorporateHealthPage() {
           <div className="max-w-4xl">
             <h1 className="text-slate-900 mb-6">Bedriftshelse tjenester</h1>
             <p className="text-slate-600 mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud 
-              exercitation ullamco.
+              Vi tilbyr skreddersydde helsetjenester for bedrifter som ønsker å redusere sykefravær, forebygge belastningsskader og styrke ansattes trivsel og produktivitet. Våre løsninger tilpasses deres behov og arbeidsmiljø.
             </p>
           </div>
         </div>
@@ -56,14 +54,10 @@ export function CorporateHealthPage() {
             <div>
               <h2 className="text-slate-900 mb-6">Skreddersydde løsninger for deres bedrift</h2>
               <p className="text-slate-600 mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Borg Helse samarbeider med små og store bedrifter for å forebygge muskel- og skjelettplager på arbeidsplassen. Vi tilbyr både behandling, veiledning og forebyggende tiltak – enten i våre lokaler eller hos dere.
               </p>
               <p className="text-slate-600 mb-6">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                culpa qui officia deserunt mollit anim id est laborum.
+                Gjennom målrettede tiltak bidrar vi til redusert sykefravær, bedre arbeidsmiljø og økt produktivitet. Våre avtaler tilpasses deres bransje og behov.
               </p>
               <button className="bg-[#127ccb] hover:bg-[#0e66a8] text-white px-8 py-3 rounded-lg transition-colors">
                 Kontakt oss for tilbud
@@ -142,19 +136,14 @@ export function CorporateHealthPage() {
           <div className="mt-16 bg-[#127ccb] p-12 rounded-xl text-center text-white">
             <h2 className="text-white mb-4">Klar til å investere i deres ansatte?</h2>
             <p className="text-blue-50 mb-8 max-w-2xl mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Kontakt oss i dag for en uforpliktende samtale.
+              Ta kontakt i dag for en gjennomgang av hvordan vi kan bidra til lavere sykefravær, bedre trivsel og økt produktivitet i deres bedrift.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-[#127ccb] px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors">
-                Kontakt oss
-              </button>
-              <Link
-                to="/#kontakt"
-                className="inline-block bg-[#0e66a8] hover:bg-[#0a4d7f] text-white px-8 py-3 rounded-lg transition-colors"
-              >
-                Se kontaktinformasjon
-              </Link>
-            </div>
+            <Link
+              to="/#kontakt"
+              className="inline-block bg-white text-[#127ccb] px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors"
+            >
+              Kontakt oss
+            </Link>
           </div>
         </div>
       </section>

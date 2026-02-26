@@ -1,4 +1,4 @@
-import { Clock, Euro, History } from 'lucide-react';
+import { History } from 'lucide-react';
 
 export function AboutSection() {
   return (
@@ -7,25 +7,23 @@ export function AboutSection() {
         <div className="text-center mb-16">
           <h2 className="text-slate-900 mb-4">Om oss</h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+            Borg Helse tilbyr faglig solid behandling innen fysioterapi og osteopati.
+            Vi legger vekt på grundig undersøkelse, individuelt tilpasset behandling og tett oppfølging for best mulig resultat.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {/* Åpningstider */}
           <div className="bg-slate-50 p-8 rounded-xl">
-            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-              <Clock className="text-[#127ccb]" size={24} />
-            </div>
             <h3 className="text-slate-900 mb-4">Åpningstider</h3>
             <div className="space-y-2 text-slate-600">
               <div className="flex justify-between">
                 <span>Mandag - Fredag:</span>
-                <span>09:00 - 18:00</span>
+                <span>06:00 - 15:00</span>
               </div>
               <div className="flex justify-between">
                 <span>Lørdag:</span>
-                <span>10:00 - 15:00</span>
+                <span>Stengt (etter avtale)</span>
               </div>
               <div className="flex justify-between">
                 <span>Søndag:</span>
@@ -36,9 +34,6 @@ export function AboutSection() {
 
           {/* Priser */}
           <div className="bg-slate-50 p-8 rounded-xl">
-            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-              <Euro className="text-[#127ccb]" size={24} />
-            </div>
             <h3 className="text-slate-900 mb-4">Priser</h3>
             <div className="space-y-2 text-slate-600">
               <div className="flex justify-between">
@@ -48,10 +43,6 @@ export function AboutSection() {
               <div className="flex justify-between">
                 <span>60 minutter:</span>
                 <span>900 kr</span>
-              </div>
-              <div className="flex justify-between">
-                <span>90 minutter:</span>
-                <span>1200 kr</span>
               </div>
               <p className="text-sm text-slate-500 mt-4">
                 * Refusjon via helseforsikring kan være tilgjengelig
@@ -78,7 +69,7 @@ export function AboutSection() {
             </div>
           </div>
           <p className="text-slate-600 text-center mt-4 text-sm">
-            * Lorem ipsum dolor sit amet consectetur adipiscing elit
+            Vi samarbeider med anerkjente forsikringsselskaper for å sikre enkel og trygg behandling.
           </p>
         </div>
       </div>

@@ -41,8 +41,7 @@ export function Footer() {
                 />
               </Link>
               <p className="text-sm">
-                Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit sed do eiusmod.
+                Borg Helse tilbyr fysioterapi og osteopati med fokus på kvalitet, trygghet og individuell oppfølging.
               </p>
             </div>
 
@@ -91,18 +90,18 @@ export function Footer() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <a
-                    href="tel:+4712345678"
+                    href="tel:+4796129130"
                     className="hover:text-[#127ccb] transition-colors"
                   >
-                    +47 123 45 678
+                    961 29 130 eller 924 54 797
                   </a>
                 </li>
                 <li>
                   <a
-                    href="mailto:post@borghelse.no"
+                    href="mailto:erik@borghelse.no"
                     className="hover:text-[#127ccb] transition-colors"
                   >
-                    post@borghelse.no
+                    erik@borghelse.no
                   </a>
                 </li>
                 <li className="text-sm">
@@ -117,9 +116,8 @@ export function Footer() {
             <div>
               <h4 className="text-white mb-4">Åpningstider</h4>
               <ul className="space-y-2 text-sm">
-                <li>Man-Fre: 09:00 - 18:00</li>
-                <li>Lørdag: 10:00 - 15:00</li>
-                <li>Søndag: Stengt</li>
+                <li>Mandag-Fredag: 06:00 - 15:00</li>
+                <li>Lørdag: Etter avtale</li>
               </ul>
             </div>
           </div>
@@ -166,11 +164,18 @@ export function Footer() {
                   Innsamling av personopplysninger
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam quis nostrud
-                  exercitation ullamco laboris.
+                  Vi samler kun inn personopplysninger som er nødvendige for å kunne tilby helsetjenester og følge opp våre pasienter. Dette kan inkludere:
+                </p>
+                <ul className="list-disc pl-6 mt-2">
+                  <li>Navn</li>
+                  <li>Telefonnummer</li>
+                  <li>E-postadresse</li>
+                  <li>Fødselsdato</li>
+                  <li>Helseopplysninger relatert til behandling</li>
+                  <li>Opplysninger gitt i forbindelse med timebestilling</li>
+                </ul>
+                <p className="mt-2">
+                  Timebestilling skjer via PatientSky, som behandler opplysninger i henhold til egne personvernvilkår.
                 </p>
               </section>
 
@@ -178,13 +183,17 @@ export function Footer() {
                 <h3 className="text-slate-900 mb-2">
                   Bruk av informasjon
                 </h3>
-                <p>Lorem ipsum dolor sit amet consectetur:</p>
+                <p>Personopplysninger brukes til:</p>
                 <ul className="list-disc pl-6 mt-2">
-                  <li>Lorem ipsum dolor sit amet</li>
-                  <li>Consectetur adipiscing elit</li>
-                  <li>Sed do eiusmod tempor</li>
-                  <li>Incididunt ut labore</li>
+                  <li>Administrasjon av timebestilling</li>
+                  <li>Gjennomføring av behandling</li>
+                  <li>Journalføring i henhold til helsepersonelloven</li>
+                  <li>Fakturering og oppgjør</li>
+                  <li>Kommunikasjon med pasient</li>
                 </ul>
+                <p className="mt-2">
+                  Opplysningene brukes ikke til markedsføring uten samtykke.
+                </p>
               </section>
 
               <section>
@@ -192,9 +201,15 @@ export function Footer() {
                   Deling av informasjon
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua.
+                  Vi deler kun personopplysninger når det er nødvendig og lovpålagt, for eksempel:
+                </p>
+                <ul className="list-disc pl-6 mt-2">
+                  <li>Med samarbeidende helsepersonell (ved samtykke)</li>
+                  <li>Med forsikringsselskap ved behandlingsforsikring</li>
+                  <li>Der lov krever det</li>
+                </ul>
+                <p className="mt-2">
+                  Vi selger aldri personopplysninger til tredjepart.
                 </p>
               </section>
 
@@ -202,14 +217,17 @@ export function Footer() {
                 <h3 className="text-slate-900 mb-2">
                   Dine rettigheter
                 </h3>
-                <p>Lorem ipsum dolor sit amet consectetur:</p>
+                <p>Du har rett til:</p>
                 <ul className="list-disc pl-6 mt-2">
-                  <li>Lorem ipsum dolor sit amet</li>
-                  <li>Consectetur adipiscing elit</li>
-                  <li>Sed do eiusmod tempor</li>
-                  <li>Incididunt ut labore</li>
-                  <li>Et dolore magna aliqua</li>
+                  <li>Innsyn i egne opplysninger</li>
+                  <li>Retting av feilaktige opplysninger</li>
+                  <li>Begrensning av behandling</li>
+                  <li>Sletting der lovverket tillater det</li>
+                  <li>Å trekke tilbake samtykke</li>
                 </ul>
+                <p className="mt-2">
+                  Helseopplysninger lagres i henhold til lovpålagte krav.
+                </p>
               </section>
 
               <section>
@@ -217,10 +235,7 @@ export function Footer() {
                   Sikkerhet
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua ut
-                  enim ad minim.
+                  Vi benytter sikre journalsystemer og digitale løsninger for å beskytte dine personopplysninger mot uautorisert tilgang, endring eller tap.
                 </p>
               </section>
 
@@ -229,9 +244,14 @@ export function Footer() {
                   Kontakt oss
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Kontakt oss på
-                  post@borghelse.no.
+                  Har du spørsmål om personvern eller ønsker innsyn i dine opplysninger?
+                  Kontakt oss på:
+                </p>
+                <p className="mt-2">
+                  <a href="mailto:erik@borghelse.no" className="text-[#127ccb] hover:underline">erik@borghelse.no</a>
+                </p>
+                <p>
+                  <a href="tel:+4796129130" className="text-[#127ccb] hover:underline">961 29 130</a> eller <a href="tel:+4792454797" className="text-[#127ccb] hover:underline">924 54 797</a>
                 </p>
               </section>
             </div>

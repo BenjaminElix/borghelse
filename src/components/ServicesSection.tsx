@@ -1,21 +1,33 @@
+import classicPhysioImage from 'figma:asset/a50e5416970bf3031921861785530f38dd87be54.png';
+import triggerPointImage from 'figma:asset/d3077469cc92747b9fb304c522b5e2bd3ecf296b.png';
+import sportsPhysioImage from 'figma:asset/d36669e8e99e8df14637d8a34011bb0f979ec756.png';
+
 export function ServicesSection() {
+  const scrollToContact = () => {
+    const element = document.getElementById('kontakt');
+    if (element) {
+      const offset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+    }
+  };
+
   const services = [
     {
       title: 'Klassisk fysioterapi',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.',
-      image: 'https://images.unsplash.com/photo-1598901986949-f593ff2a31a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXNzYWdlJTIwdGhlcmFweXxlbnwxfHx8fDE3NjY4OTY1MDd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      icon: 'https://api.iconify.design/mdi:hand-heart.svg?color=%23127ccb',
+      description: 'Individuelt tilpasset behandling av muskel- og skjelettplager, med fokus på funksjon og langsiktig bedring.',
+      image: classicPhysioImage,
     },
     {
       title: 'Sportsfysioterapi',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.',
-      image: 'https://images.unsplash.com/photo-1706353399656-210cca727a33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaHlzaW90aGVyYXB5JTIwdHJlYXRtZW50fGVufDF8fHx8MTc2Njg0OTY0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      icon: 'https://api.iconify.design/mdi:run-fast.svg?color=%23127ccb',
+      description: 'Spesialisert behandling og rehabilitering for aktive personer og idrettsutøvere.',
+      image: sportsPhysioImage,
     },
     {
       title: 'Triggerpunkt-behandling',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.',
-      image: 'https://images.unsplash.com/photo-1759216852567-5e1dd25f79f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWxsbmVzcyUyMHNwYSUyMHJlbGF4YXRpb258ZW58MXx8fHwxNzY2ODY3NDExfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      description: 'Behandling rettet mot muskulære spenninger og smerteutstrålende triggerpunkter.',
+      image: triggerPointImage,
     },
   ];
 
@@ -25,7 +37,7 @@ export function ServicesSection() {
         <div className="text-center mb-16">
           <h2 className="text-slate-900 mb-4">Våre tjenester</h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.
+            Vi hjelper deg tilbake til en smertefri og aktiv hverdag med trygg, individuelt tilpasset behandling.
           </p>
         </div>
 
@@ -46,15 +58,6 @@ export function ServicesSection() {
               <div className="p-6">
                 <h3 className="text-slate-900 mb-2">{service.title}</h3>
                 <p className="text-slate-600">{service.description}</p>
-                {service.icon && (
-                  <div className="mt-4">
-                    <img
-                      src={service.icon}
-                      alt={`${service.title} icon`}
-                      className="w-8 h-8"
-                    />
-                  </div>
-                )}
               </div>
             </div>
           ))}
@@ -69,9 +72,7 @@ export function ServicesSection() {
               </div>
               <h3 className="text-slate-900 mb-4">ISO Sonater Kurs</h3>
               <p className="text-slate-600 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip.
+                Vi tilbyr tilpassede HMS-kurs for bedrifter som ønsker å forebygge belastningsskader og styrke arbeidsmiljøet.
               </p>
               <ul className="space-y-2 text-slate-600 mb-6">
                 <li className="flex items-start gap-2">
@@ -87,7 +88,7 @@ export function ServicesSection() {
                   <span>Tilpasset deres bedrift</span>
                 </li>
               </ul>
-              <button className="bg-[#127ccb] hover:bg-[#0e66a8] text-white px-6 py-3 rounded-lg transition-colors">
+              <button className="bg-[#127ccb] hover:bg-[#0e66a8] text-white px-6 py-3 rounded-lg transition-colors" onClick={scrollToContact}>
                 Kontakt oss for mer informasjon
               </button>
             </div>

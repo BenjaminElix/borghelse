@@ -1,3 +1,5 @@
+import historyImage from 'figma:asset/7c8ae5548b4ece0b408ca7bb8097c1a8c7465e35.png';
+
 export function HistorySection() {
   return (
     <section className="py-20 bg-slate-50">
@@ -34,8 +36,8 @@ export function HistorySection() {
           <div className="relative">
             <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1706353399656-210cca727a33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaHlzaW90aGVyYXB5JTIwdHJlYXRtZW50fGVufDF8fHx8MTc2Njg0OTY0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Borg Helse"
+                src={historyImage}
+                alt="Borg Helse - Fysioterapeut"
                 className="w-full h-full object-cover"
               />
             </div>

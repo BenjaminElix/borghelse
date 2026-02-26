@@ -1,3 +1,5 @@
+import heroImage from 'figma:asset/8830e9357c9076f15fdf3b0f6366f17009df673a.png';
+
 export function Hero() {
   const scrollToBooking = () => {
     const element = document.getElementById('bestill');
@@ -14,8 +16,8 @@ export function Hero() {
       {/* Background Image with Opacity */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1598901986949-f593ff2a31a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXNzYWdlJTIwdGhlcmFweXxlbnwxfHx8fDE3NjY4OTY1MDd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-          alt="Massage therapy"
+          src={heroImage}
+          alt="Fysioterapi behandling"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-slate-900/40 to-slate-900/50"></div>
@@ -33,8 +35,8 @@ export function Hero() {
           className="text-white mb-8 max-w-2xl mx-auto text-xl sm:text-2xl" 
           style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8), -1px -1px 0 rgba(0,0,0,0.3), 1px -1px 0 rgba(0,0,0,0.3), -1px 1px 0 rgba(0,0,0,0.3), 1px 1px 0 rgba(0,0,0,0.3)' }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt 
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.
+          Sliter du med smerter i rygg, nakke eller skuldre?
+          Hos oss får du trygg og målrettet behandling tilpasset dine behov.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
